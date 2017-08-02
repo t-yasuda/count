@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
     var number: Int = 0
@@ -33,6 +34,15 @@ class ViewController: UIViewController {
     @IBAction func clear(){
         number = 0
         label.text = String(number)
+    }
+    
+    @IBAction func showHUD(){
+        SVProgressHUD.show()
+    }
+    
+    
+    @IBAction func dissmissHUD(){
+        SVProgressHUD.dismiss()
     }
     
 }
